@@ -1,0 +1,27 @@
+{
+  "name": "semanajs-d3",
+  "version": "1.0.0",
+  "description": "Trabalhando com Test Driven Development na vida real",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit test/",
+    "test:dev": "npx mocha test/ -w",
+    "test:cov": "npx nyc --reporter=html npm test",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  },
+  "devDependencies": {
+    "lokijs": "^1.5.11"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
